@@ -55,7 +55,7 @@ class MoviesController extends AppController
             //debug($this->request->getData());
             $movie = $this->Movies->patchEntity($movie, $this->request->getData());
             //debug($movie);
-            die();
+            //die();
             
             if ($this->Movies->save($movie)) {
                 $this->Flash->success(__('The movie has been saved.'));
